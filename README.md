@@ -1,6 +1,6 @@
 # Student Record Search System (BST, C)
-
-A DSA mini project. Each student record has a unique enrolment ID (the BST key), a name, and a department.
+A program that models campus locations as a graph. It uses an adjacency list and BFS to find the shortest route between two places, DFS to list reachable locations, and detects disconnected places.
+Each student record has a unique enrolment ID (the BST key), a name, and a department.
 
 ## Features
 - Insert records and reject duplicate IDs with a message
@@ -85,10 +85,4 @@ Space is O(n) for the records. Recursive calls use O(h) stack space, where h is 
 ## Why a BST Can Become O(n)
 If IDs are inserted in sorted order (1, 2, 3, ...), each new ID becomes the right child of the previous one. The tree turns into a straight chain, so search behaves like a linked list. An AVL tree fixes this by rotating nodes after each insert or delete to keep the height at O(log n).
 
-## Screenshots
-Add these to a `screenshots/` folder:
-1. Insert and duplicate rejection (option 1)
-2. Search (option 2)
-3. Deletion (option 3)
-4. Inorder, preorder, and postorder (options 4, 5, 6)
-5. Test cases (option 8)
+
