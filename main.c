@@ -136,7 +136,7 @@ static void bst_init(BST *t) {
 }
 
 static Node *new_node(Student s) {
-    Node *n = xmalloc(sizeof(Node));
+    Node *n = (Node *)xmalloc(sizeof(Node));
     n->data = s;
     n->left = NULL;
     n->right = NULL;
@@ -338,7 +338,7 @@ static void ids_to_text(const Student arr[], int n, char *buf, size_t size) {
 
 /* Writes the inorder sequence of IDs as text. */
 static void inorder_text(const BST *t, char *buf, size_t size) {
-    Student *arr = xmalloc(sizeof(Student) * (size_t)(t->size + 1));
+    Student *arr = (Student *)xmalloc(sizeof(Student) * (size_t)(t->size + 1));
     int n = 0;
     collect(t->root, INORDER, arr, &n);
     ids_to_text(arr, n, buf, size);
