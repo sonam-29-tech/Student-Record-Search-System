@@ -1,6 +1,5 @@
 # Student Record Search System (BST, C)
-A program that models campus locations as a graph. It uses an adjacency list and BFS to find the shortest route between two places, DFS to list reachable locations, and detects disconnected places.
-Each student record has a unique enrolment ID (the BST key), a name, and a department.
+A program that stores student records in a Binary Search Tree keyed by enrolment ID. It supports insert with duplicate rejection, search, deletion (leaf, one-child, two-child), and inorder, preorder, and postorder traversals.
 
 ## Features
 - Insert records and reject duplicate IDs with a message
